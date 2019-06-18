@@ -13,6 +13,10 @@ class AddressBookWorld {
     this.page = await this.browser.newPage()
     await this.page.goto(HOME_PAGE)
   }
+  // Close the home page using puppeteer
+  async closeHomePage() {
+    await this.browser.close()
+  }
 }
 
 setWorldConstructor(AddressBookWorld)
