@@ -2,12 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Select form object from the DOM
     const addContactForm = document.querySelector('.new-contact-form')
   
-    // Register an event to listen for form submission
     addContactForm.addEventListener('submit', event => {
-      // Disable default behavior when submitting form
       event.preventDefault()
-  
-      // Get all inputs elements from the form
+      const storage = window.localStorage
+
       const {
         name,
         email,
@@ -29,5 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   
       console.log(`Saving the following contact: ${JSON.stringify(contact)}`)
+      storage.setItem('contacts', JSON.stringify([contact]))
     })
   })
