@@ -1,5 +1,21 @@
 const storage = window.localStorage;
 
+document.getElementById('hide').style.display= "none"
+
+let a = 1
+
+function showForm () {
+    a += 1
+    if(a % 2 == 0){
+        document.getElementById('hide').style.display= "block";
+    }
+    else {
+        document.getElementById('hide').style.display= "none";
+    }
+}
+
+document.getElementById("add-contact").addEventListener("click", showForm)
+
 const renderContacts = () => {
     const contacts = JSON.parse(storage.getItem('contacts'))
     
