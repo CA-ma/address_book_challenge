@@ -33,7 +33,7 @@ const renderContacts = () => {
 
 document.addEventListener('DOMContentLoaded', () => {    
     renderContacts()
-    const addContactForm = document.querySelector('.new-contact-form')
+    const addContactForm = document.querySelector('#new-contact-form')
     addContactForm.addEventListener('submit', event => {
         let clearMessage = document.querySelector('.contact-list');
         clearMessage.innerHTML = ""
