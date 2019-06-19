@@ -1,7 +1,7 @@
 const renderContacts = () => {
     const storage = window.localStorage
     // Read all the contacts from the storage
-    const contacts = JSON.parse(storage.getItem('contacts'))
+    let contacts = JSON.parse(storage.getItem('contacts')) || []
   
     // Select the container we will use to list the contacts 
     let div = document.querySelector('.contact-list')
