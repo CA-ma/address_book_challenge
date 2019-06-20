@@ -11,15 +11,19 @@
   <title>Address book</title>
 </head>
 
-<body style="background-color: white;">
+<body>
   <!--<h1>Contacts</h1>-->
   <div class="body">
-    <div style="border: 2px solid green; width: 20vw; min-width: 100px; float:left">
+
+    <div class="button-div" style="">
       <button class="ui button" id="add-contact">Add Contact</button>
     </div>
     
-    <div class= "contact-list" style="border: 2px solid black; float: right; width: 80vw"></div> 
-    <div id= "hide">
+    <div class= "contact-list">
+
+    </div> 
+
+    <div id="hide">
       <form action="#" class="ui form" id="new-contact-form" style="border: 2px solid red; width: 20vw; min-width: 200px">
         <label for="name">Name</label>
         <input id="contact-name" name="name" type="text" placeholder="Name">
@@ -36,7 +40,9 @@
         <input class="" id="save-contact" type="submit" value="Save contact">
       </form>
     </div>
+
   </div>
+  
   <script src="./dist/bundle.js"></script>
 </body>
 

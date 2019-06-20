@@ -1,0 +1,16 @@
+.body{
+    background-color: white;
+}
+
+.button-div{
+    border: 2px solid green; 
+    width: 20vw; 
+    min-width: 100px; 
+    float:left
+}
+
+.contact-list{
+    border: 2px solid black; 
+    width: 80vw;
+    float:right; 
+}
