@@ -15,6 +15,8 @@ function showForm () {
 }
 
 document.getElementById("add-contact").addEventListener("click", showForm)
+document.getElementById("save-contact").addEventListener("click", showForm)
+
 
 const renderContacts = () => {
     const contacts = JSON.parse(storage.getItem('contacts'))
