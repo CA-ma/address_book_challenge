@@ -12,26 +12,31 @@
 </head>
 
 <body style="background-color: white;">
-  <h1>Contacts</h1>
-  <button class="ui button" id="add-contact">Add Contact</button>
-  <div class= "contact-list" style="border: 2px solid black"></div> 
-  <div id= "hide">
-  <form action="#" class="ui form" id="new-contact-form" style="border: 2px solid red; width: 20vw; min-width: 200px">
-      <label for="name">Name</label>
-      <input id="contact-name" name="name" type="text" placeholder="Name">
-      <label for="email">Email</label>
-      <input id="contact-email" name="email" type="email" placeholder="Email">
-      <label for="phone">Phone</label>
-      <input id="contact-phone" name="phone" type="text" placeholder="Phone">
-      <label for="company">Company</label>
-      <input id="contact-company" name="company" type="text" placeholder="Company">
-      <label for="notes">Notes</label>
-      <textarea id="contact-notes" name="notes" type="text" placeholder="Notes"></textarea>
-      <label for="twitter">Twitter</label>
-      <input id="contact-twitter" name="twitter" type="text" placeholder="Twitter">
-      <input class="" id="save-contact" type="submit" value="Save contact">
-    </form>
+  <!--<h1>Contacts</h1>-->
+  <div class="body">
+    <div style="border: 2px solid green; width: 20vw; min-width: 100px; float:left">
+      <button class="ui button" id="add-contact">Add Contact</button>
     </div>
+    
+    <div class= "contact-list" style="border: 2px solid black; float: right; width: 80vw"></div> 
+    <div id= "hide">
+      <form action="#" class="ui form" id="new-contact-form" style="border: 2px solid red; width: 20vw; min-width: 200px">
+        <label for="name">Name</label>
+        <input id="contact-name" name="name" type="text" placeholder="Name">
+        <label for="email">Email</label>
+        <input id="contact-email" name="email" type="email" placeholder="Email">
+        <label for="phone">Phone</label>
+        <input id="contact-phone" name="phone" type="text" placeholder="Phone">
+        <label for="company">Company</label>
+        <input id="contact-company" name="company" type="text" placeholder="Company">
+        <label for="notes">Notes</label>
+        <textarea id="contact-notes" name="notes" type="text" placeholder="Notes"></textarea>
+        <label for="twitter">Twitter</label>
+        <input id="contact-twitter" name="twitter" type="text" placeholder="Twitter">
+        <input class="" id="save-contact" type="submit" value="Save contact">
+      </form>
+    </div>
+  </div>
   <script src="./dist/bundle.js"></script>
 </body>
 
