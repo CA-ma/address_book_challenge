@@ -1,16 +1,30 @@
-.body{
+body{
     background-color: white;
 }
 
 .button-div{
     border: 2px solid green; 
-    width: 20vw; 
-    min-width: 100px; 
-    float:left
+    width: 20vw; min-width: 200px; 
+    height: 10vw; min-height: 90px;
+    float:left;
+    text-align: center;
+}
+
+#button-wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-list{
     border: 2px solid black; 
-    width: 80vw;
-    float:right; 
+    width: auto;
+    min-width: 450px;
+    overflow: auto; 
+}
+
+#hide{
+    border: 2px solid red; 
+    width: 20vw; min-width: 200px;
+    height: auto;
+    float: left;
 }
