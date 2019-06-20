@@ -24,26 +24,54 @@ const renderContacts = () => {
     let div = document.querySelector('.contact-list');
     div.innderHTML = ''
     if (contacts) {        
-        const ul = document.createElement('ul')
-        ul.className = "list-reset";
+        const table = document.createElement('table')
+        table.className = "list-reset";
+        table.innerHTML = `
+                <div class="table-titles">
+                        <td>Name</td>
+                        <td>Company</td>
+                        <td>Notes</td>
+                        <td>Email</td>
+                        <td>Twitter</td>
+                </div>
+                `
         
         contacts.forEach(contact => {
-            let li = document.createElement('li')
-            li.innerHTML = `
+            let tr = document.createElement('tr')
+            tr.innerHTML = `
                 <div class="card">
                     <div class="content">
-                        <h1>${ contact.name }</h1>
-                        <h2>${ contact.company }</h2>
-                        <p>${ contact.notes }</p>
-                        ${ contact.email } |
-                        <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a>
+                        <td>${ contact.name }</td>
+                        <td>${ contact.company }</td>
+                        <td>${ contact.notes }</td>
+                        <td>${ contact.email }</td>
+                        <td><a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a></td>
+                        <td><button class="ui inverted red button" id="delete">Delete</button>
                     </div>
                 </div>
             `
-            ul.appendChild(li)
+            table.appendChild(tr)
         })
         
-        div.appendChild(ul)
+        div.appendChild(table)
+
+        let index = document.getElementsByClassName("list-reset");
+            for(let i = 1; i < table.rows.length; i++)
+            {
+                table.rows[i].cells[5].onclick = function()
+                {
+                    let c = confirm("do you want to delete this contact?");
+                    if(c === true)
+                    {
+                        index = this.parentElement.rowIndex;
+                        table.deleteRow(index);
+                        addContactForm.storage.splice[index - 1];
+                    }
+                    
+                    //console.log(index);
+                };
+                
+            }
     } else {
         div.innerHTML = `<p>You have no contacts in your address book</p>`
     }
@@ -84,3 +112,16 @@ document.addEventListener('DOMContentLoaded', () => {
         addContactForm.reset()
     })
 })
+
+
+
+// let index, listTable = document.getElementsByClassName("list-reset");
+// for (let i = 0; i < listTable.rows.length; i++)
+// {
+//     listTable.rows[i].onclick = function()
+//     {
+//         index = this.parentElement.rowIndex;
+//         console.log(index);
+//     };
+    
+// }
