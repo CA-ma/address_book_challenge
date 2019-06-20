@@ -2,11 +2,15 @@ body{
     background-color: white;
 }
 
+.side-bar{
+    width: 200px;
+    height: 100vh;
+    float: left;
+}
+
 .button-div{
     border: 2px solid green; 
-    width: 200px; 
-    height: 90px;
-    float:left;
+    width: 200px; height: 90px;
     text-align: center;
     z-index: 0;
 }
@@ -18,24 +22,24 @@ body{
 
 .title-bar{
     border: 2px solid orange;
-    width: 200px; height: 100%;
-    position: absolute; top: 90px;
-    z-index: 0;
-    overflow: auto;
+    width: 200px; height: 100vh;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
 }
 
 #hide{
     border: 2px solid red; 
     background-color: white;
-    width: 20vw; min-width: 200px;
-    height: 100%;
+    width: 200px; height: 100vh;
+    top: 0px;
     position: absolute;
     z-index: 1;
 }
 
 .contact-list{
     border: 2px solid black; 
-    width: auto;
+    height: 100vh;
     min-width: 450px;
     overflow: auto; 
 }
