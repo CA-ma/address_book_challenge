@@ -3,6 +3,7 @@ body{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    font: "Roboto";
 }
 
 .side-bar{
@@ -12,7 +13,7 @@ body{
 }
 
 .button-div{
-    border: 2px solid green; 
+    /* border: 2px solid green; */
     width: 200px; height: 90px;
     text-align: center;
     z-index: 0;
@@ -24,15 +25,24 @@ body{
 }
 
 .title-bar{
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     width: 200px; height: 100vh;
     top: 0px;
     position: fixed;
     z-index: -1;
+
+}
+
+.title{
+    position: absolute;
+    top: 25%;
+    left: 100px;
+    text-align: center;
+    font-size: 24px;
 }
 
 #hide{
-    border: 2px solid red; 
+    /*border: 2px solid red; */
     background-color: white;
     width: 200px; height: 100vh;
     top: 0px;
@@ -41,8 +51,12 @@ body{
 }
 
 .contact-list{
-    border: 2px solid black; 
+    /*border: 2px solid black; */
     height: 100vh;
     left: 200px;
     overflow: auto;
+}
+
+p {
+    margin-bottom: -5px;
 }
