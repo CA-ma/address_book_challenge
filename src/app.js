@@ -28,11 +28,13 @@ const renderContacts = () => {
         table.className = "list-reset";
         table.innerHTML = `
                 <div class="table-titles">
-                        <td>Name</td>
-                        <td>Company</td>
-                        <td>Notes</td>
-                        <td>Email</td>
-                        <td>Twitter</td>
+                        <tr>
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Notes</th>
+                        <th>Email</th>
+                        <th>Twitter</th>
+                        </tr>
                 </div>
                 `
         
@@ -41,12 +43,14 @@ const renderContacts = () => {
             tr.innerHTML = `
                 <div class="card">
                     <div class="content">
+                        <tr>
                         <td>${ contact.name }</td>
                         <td>${ contact.company }</td>
                         <td>${ contact.notes }</td>
                         <td>${ contact.email }</td>
                         <td><a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a></td>
                         <td><button class="ui inverted red button" id="delete">Delete</button>
+                        </tr>
                     </div>
                 </div>
             `
@@ -65,7 +69,9 @@ const renderContacts = () => {
                     {
                         index = this.parentElement.rowIndex;
                         table.deleteRow(index);
-                        addContactForm.storage.splice[index - 1];
+                        delete contacts[index]
+                        
+                        
                     }
                     
                     //console.log(index);
@@ -108,6 +114,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let contacts = JSON.parse(storage.getItem('contacts')) || []
         contacts.push(contact)
         storage.setItem('contacts', JSON.stringify(contacts))
+
+        // function removeStorage () {
+        //     localStorage.removeItem()
+        //     }
+        // document.getElementById("delete").addEventListener("click", removeStorage)
+        
         renderContacts()
         addContactForm.reset()
     })
