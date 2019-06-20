@@ -27,6 +27,28 @@ function memWipe() {
     renderContacts()
 }
 
+// Function to clear the first entry (index[0]) from local storage
+document.getElementById("delete-contact").addEventListener("click", memDeleteItem)
+
+function memDeleteItem() {
+    let storedNames = [];
+    for (let i=0; i<localStorage.length; i++){
+        storedNames[i] = JSON.parse(localStorage.getItem('contacts'));
+    }
+    console.log(localStorage.length)
+    console.log(storedNames[0])
+
+    // let i = localStorage.length;
+    // while (i-- > 0) {
+    //     let key = localStorage.key(i);
+    //     if (localStorage.getItem(key) === 'Max Aubain') {
+    //         localStorage.removeItem(key);
+    //     }
+    // }
+
+    //renderContacts()
+}
+
 
 // Function to show contacts currently in 
 const renderContacts = () => {
@@ -60,6 +82,7 @@ const renderContacts = () => {
     }
 }
 
+// Process to show contacts list, persistent between sessions as contacts are stored in local storage
 document.addEventListener('DOMContentLoaded', () => {
     renderContacts()
     const addContactForm = document.querySelector('#new-contact-form')
