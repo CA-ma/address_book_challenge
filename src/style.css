@@ -71,7 +71,7 @@ body{
 }
 
 p {
-    margin-bottom: -5px;
+
 }
 
 #no-contacts {
@@ -108,4 +108,8 @@ p {
     margin-bottom:10px;
     margin-left:20px;
 
+}
+
+#contact-notes{
+    height: 100px;
 }
