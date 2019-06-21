@@ -52,6 +52,8 @@ body{
 
 .contact-list{
     /*border: 2px solid black; */
+    margin-top: 15px;
+    border: 20px;
     height: 100vh;
     left: 200px;
     overflow: auto;
@@ -59,4 +61,8 @@ body{
 
 p {
     margin-bottom: -5px;
+}
+
+#hide{
+    margin-top: 25px;
 }
