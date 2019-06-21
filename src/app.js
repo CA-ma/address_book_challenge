@@ -14,6 +14,7 @@ function showForm() {
     }
 }
 document.getElementById("add-contact").addEventListener("click", showForm)
+document.getElementById("back").addEventListener("click", showForm)
 document.getElementById("save-contact").addEventListener("click", showForm)
 
 // Function to clear local storage of contact information

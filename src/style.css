@@ -6,6 +6,10 @@ body{
     font: "Roboto";
 }
 
+#new-contact-form{
+    margin-top: 20px;
+}
+
 .side-bar{
     width: 200px;
     height: 100vh;
@@ -52,6 +56,8 @@ body{
 
 .contact-list{
     /*border: 2px solid black; */
+    margin-top: 20px;
+    padding-left: 30px;
     height: 100vh;
     left: 200px;
     overflow: auto;
@@ -59,4 +65,32 @@ body{
 
 p {
     margin-bottom: -5px;
+}
+
+#add-contact {
+
+}
+
+#save-contact {
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+
+#reset-contact {
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+
+#delete-contact {
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+
+#back {
+    margin-top:10px;
+    margin-bottom:10px;
+
 }
