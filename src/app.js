@@ -27,16 +27,15 @@ function memWipe() {
     renderContacts()
 }
 
-// Function to clear the first entry (index[0]) from local storage
+// Function to clear an item(s) from local storage
 document.getElementById("delete-contact").addEventListener("click", memDeleteItem)
 
 function memDeleteItem() {
-    let storedNames = [];
-    for (let i=0; i<localStorage.length; i++){
-        storedNames[i] = JSON.parse(localStorage.getItem('contacts'));
-    }
-    console.log(localStorage.length)
-    console.log(storedNames[0])
+    const contacts = JSON.parse(localStorage.getItem('contacts'));
+    console.log("contacts array", contacts)
+    console.log("first entry in contacts array", contacts[0])
+    console.log("length of contacts array", contacts.length)
+    console.log("return id value of first entry in contacts", contacts[0].id)
 
     // let i = localStorage.length;
     // while (i-- > 0) {
