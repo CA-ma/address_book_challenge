@@ -1,7 +1,7 @@
 # Challenge: Address Book web interface
 
 ## Deployment
-**github-pages link here**
+**github-pages link here**  
 Note: This application stores data in the local memory of the browser.  Remember to secure your personal information by clearing the local memory at the end of the demonstration.
 ```
 **directions to clear local storage**
@@ -24,7 +24,7 @@ This repository contains scripts for a front-end only implementation of an Addre
 ## 3. Testing
 
 ## 4. Authors
-[Aubain, Max](https://maxaubain.github.io)-[Github](https://github.com/CA-ma)
+[Aubain, Max](https://maxaubain.github.io)-[Github](https://github.com/CA-ma)  
 Brás, Pedro-[Github](https://github.com/pedrocbras)
 
 ## 5. Acknowledgements
