@@ -14,8 +14,8 @@ function showForm() {
     }
 }
 document.getElementById("add-contact").addEventListener("click", showForm)
-document.getElementById("back").addEventListener("click", showForm)
 document.getElementById("save-contact").addEventListener("click", showForm)
+document.getElementById("back").addEventListener("click", showForm)
 
 // Function to clear local storage of contact information
 document.getElementById("reset-contacts").addEventListener("click", memWipe)
@@ -94,7 +94,7 @@ const renderContacts = () => {
         div.appendChild(ul)
     } 
     else {
-        div.innerHTML = `<p>You have no contacts in your address book</p>`
+        div.innerHTML = `<p id= "no-contacts">You have no contacts in your address book.</p>`
     }
 }
 
