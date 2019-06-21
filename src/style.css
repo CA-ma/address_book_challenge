@@ -71,7 +71,7 @@ body{
 }
 
 p {
-
+    margin-bottom: -5px;
 }
 
 #no-contacts {
