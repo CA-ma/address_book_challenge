@@ -1,7 +1,7 @@
 # Challenge: Address Book web interface
 
 ## Deployment
-**github-pages link here**  
+https://ca-ma.github.io/address_book_challenge/
 Note: This application stores data in the local memory of the browser.  Remember to secure your personal information by clearing the local memory at the end of the demonstration.
 
 1. *right click* anywhere on the webpage and then *click* "inspect".
