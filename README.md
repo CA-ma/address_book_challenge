@@ -48,7 +48,7 @@ To test this application from a user perspective, one simply needs to visit the 
 
 Selecting the "add/edit contacts" button will cause a web form to appear.  At the top of the form are input fields to specify the information for a new contact to be added to the list.  At the bottom of the form are a collection of actions the user can take, including add contact, remove contact, reset the contacts list, and hide the menu without taking any actions that would modify the contacts list.  With each action, the contacts list will update itself accordingly.
 
-Some notable Javascript features include the creation of temporary HTML objects that represent each contact, the contact data is stored in a single key/value entry in the window.localStorage, and contacts list editing requires manipulation of the HTML contact objects as well as the hash stored in localStorage.  Each section has general comments to explain its purpose.
+Some notable Javascript features in the app.js file include the creation of temporary HTML objects that represent each contact, the contact data is stored in a single key/value entry in the window.localStorage, and contacts list editing requires manipulation of the HTML contact objects as well as the hash stored in localStorage.  Each section has general comments to explain its purpose.
 
 ## 4. Authors
 [Aubain, Max](https://maxaubain.github.io) - [Github](https://github.com/CA-ma)  
