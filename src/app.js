@@ -79,11 +79,12 @@ const renderContacts = () => {
             li.innerHTML = `
                 <div class="card">
                     <div class="content">
-                        <h1>${ contact.name}</h1>
-                        <h2>${ contact.company}</h2>
-                        <p>${ contact.notes}</p>
-                        ${ contact.email} |
-                        <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a>
+                        <p id="name"><i class="address book outline icon"></i>${ contact.name}</p>
+                        <p id="phone"><i class="phone square icon"></i>${ contact.phone}</p>
+                        <p id="company"><i class="suitcase icon"></i>${ contact.company}</p>
+                        <p id="note"><i class="clipboard outline icon"></i>${ contact.notes}</p>
+                        <p id="email"><i class="envelope outline icon"></i>${ contact.email} | <i class="twitter square icon"></i>
+                        <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a></p>
                         <button class="ui inverted red button" id="delete-${index}">Delete</button>
                     </div>
                 </div>

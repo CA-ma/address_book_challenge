@@ -70,7 +70,7 @@ body{
     overflow: auto;
 }
 
-p {
+#title {
     margin-bottom: -5px;
 }
 
@@ -109,3 +109,4 @@ p {
     margin-left:20px;
 
 }
+
