@@ -68,12 +68,11 @@ const renderContacts = () => {
     const contacts = JSON.parse(storage.getItem('contacts'))
 
     let div = document.querySelector('.contact-list');
-    div.innderHTML = ''
+    div.innerHTML = ''
     if (contacts) {
         const ol = document.createElement('ol')
         ol.className = "list-reset";
 
-        let index = 0
         contacts.forEach(contact => {
             let li = document.createElement('li')
             li.innerHTML = `
@@ -89,7 +88,6 @@ const renderContacts = () => {
                 </div>
             `
             ol.appendChild(li)
-            index += 1
         })
         div.appendChild(ol)
     } 
