@@ -15,6 +15,7 @@ function showForm() {
 }
 document.getElementById("add-contact").addEventListener("click", showForm)
 document.getElementById("save-contact").addEventListener("click", showForm)
+document.getElementById("back").addEventListener("click", showForm)
 
 // Function to clear local storage of contact information
 document.getElementById("reset-contacts").addEventListener("click", memWipe)
@@ -69,8 +70,8 @@ const renderContacts = () => {
     let div = document.querySelector('.contact-list');
     div.innderHTML = ''
     if (contacts) {
-        const ul = document.createElement('ul')
-        ul.className = "list-reset";
+        const ol = document.createElement('ol')
+        ol.className = "list-reset";
 
         let index = 0
         contacts.forEach(contact => {
@@ -78,22 +79,22 @@ const renderContacts = () => {
             li.innerHTML = `
                 <div class="card">
                     <div class="content">
-                        <h1>${ contact.name}</h1>
-                        <h2>${ contact.company}</h2>
-                        <p>${ contact.notes}</p>
-                        ${ contact.email} |
-                        <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a>
-                        <button class="ui inverted red button" id="delete-${index}">Delete</button>
+                        <p id="name"><i class="address book outline icon"></i>${ contact.name}</p>
+                        <p id="phone"><i class="phone square icon"></i>${ contact.phone}</p>
+                        <p id="company"><i class="suitcase icon"></i>${ contact.company}</p>
+                        <p id="note"><i class="clipboard outline icon"></i>${ contact.notes}</p>
+                        <p id="email"><i class="envelope outline icon"></i>${ contact.email} | <i class="twitter square icon"></i>
+                        <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a></p>
                     </div>
                 </div>
             `
-            ul.appendChild(li)
+            ol.appendChild(li)
             index += 1
         })
-        div.appendChild(ul)
+        div.appendChild(ol)
     } 
     else {
-        div.innerHTML = `<p>You have no contacts in your address book</p>`
+        div.innerHTML = `<p id= "no-contacts">You have no contacts in your address book.</p>`
     }
 }
 
