@@ -70,8 +70,8 @@ const renderContacts = () => {
     let div = document.querySelector('.contact-list');
     div.innderHTML = ''
     if (contacts) {
-        const ul = document.createElement('ul')
-        ul.className = "list-reset";
+        const ol = document.createElement('ol')
+        ol.className = "list-reset";
 
         let index = 0
         contacts.forEach(contact => {
@@ -85,14 +85,13 @@ const renderContacts = () => {
                         <p id="note"><i class="clipboard outline icon"></i>${ contact.notes}</p>
                         <p id="email"><i class="envelope outline icon"></i>${ contact.email} | <i class="twitter square icon"></i>
                         <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a></p>
-                        <button class="ui inverted red button" id="delete-${index}">Delete</button>
                     </div>
                 </div>
             `
-            ul.appendChild(li)
+            ol.appendChild(li)
             index += 1
         })
-        div.appendChild(ul)
+        div.appendChild(ol)
     } 
     else {
         div.innerHTML = `<p id= "no-contacts">You have no contacts in your address book.</p>`

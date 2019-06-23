@@ -46,7 +46,14 @@
           <input id="contact-twitter" name="twitter" type="text" placeholder="Twitter">
           <input class="ui inverted green button" id="save-contact" type="submit" value="Save contact">
         </form>
-        <button class="ui inverted yellow button" id="delete-contact">Delete Contact</button>
+        <div id="delete-button" class="ui right labeled left icon input">
+            <i class="times icon"></i>
+            <input type="text" size="8" placeholder="Contact #">
+            <a id="delete-contact" class="ui red tag label">
+              Delete
+            </a>
+          </div>
+        <!-- <button class="ui inverted yellow button" id="delete-contact">Delete Contact</button> -->
         <button class="ui inverted red button" id="reset-contacts">Reset Contacts</button>
         <div>
         <button class="ui grey button" id="back">Hide</button>
