@@ -64,13 +64,15 @@ const renderContacts = () => {
     if (contacts) {
         const ol = document.createElement('ol')
         ol.className = "list-reset";
+        let index = 0
 
         contacts.forEach(contact => {
+            index += 1
             let li = document.createElement('li')
             li.innerHTML = `
                 <div class="card">
                     <div class="content">
-                        <p id="name"><i class="address book outline icon"></i>${ contact.name}</p>
+                        <p id="name">${index}. ${ contact.name}</p>
                         <p id="phone"><i class="phone square icon"></i>${ contact.phone}</p>
                         <p id="company"><i class="suitcase icon"></i>${ contact.company}</p>
                         <p id="note"><i class="clipboard outline icon"></i>${ contact.notes}</p>
