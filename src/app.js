@@ -26,9 +26,7 @@ function memWipe() {
 }
 
 // Function to clear top item from local storage
-document.getElementById("delete-contact").addEventListener("click", memDeleteItem)
-
-function memDeleteItem() {
+document.getElementById("delete-contact").addEventListener("click", () => {
     const contacts = JSON.parse(localStorage.getItem('contacts'));
     //console.log("contacts array", contacts)
     //console.log("first entry in contacts array", contacts[0])
@@ -48,20 +46,7 @@ function memDeleteItem() {
 
     // Render edited contacts list
     renderContacts()
-}
-
-// Function to assign event listeners to newly created "delete" buttons
-
-// let update = false
-// if (update == true){
-//     for (let i = 0; i < 100; i++){
-//         let label = "delete-" + String(i) 
-//         console.log(label)
-//         document.getElementById(label).addEventListener("click", memDeleteItem(i))
-//     }
-//     update = false
-// }
-
+})
 
 // Function to show contacts currently in local storage
 const renderContacts = () => {
