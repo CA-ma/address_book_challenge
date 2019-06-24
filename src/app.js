@@ -14,7 +14,7 @@ function showForm() {
     }
 }
 document.getElementById("add-contact").addEventListener("click", showForm)
-document.getElementById("save-contact").addEventListener("click", showForm)
+//document.getElementById("save-contact").addEventListener("click", showForm)
 document.getElementById("back").addEventListener("click", showForm)
 
 // Function to clear local storage of contact information
@@ -72,12 +72,12 @@ const renderContacts = () => {
             li.innerHTML = `
                 <div class="card">
                     <div class="content">
-                        <p id="name">${index}. ${ contact.name}</p>
+                        <p id="name">${index}.  ${  contact.name}</p>
                         <p id="phone"><i class="phone square icon"></i>${ contact.phone}</p>
                         <p id="company"><i class="suitcase icon"></i>${ contact.company}</p>
                         <p id="note"><i class="clipboard outline icon"></i>${ contact.notes}</p>
                         <p id="email"><i class="envelope outline icon"></i>${ contact.email} | <i class="twitter square icon"></i>
-                        <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a></p>
+                        <a id="twitter" href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a></p>
                     </div>
                 </div>
             `
