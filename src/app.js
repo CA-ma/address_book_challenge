@@ -3,6 +3,9 @@ const storage = window.localStorage;
 
 // Function to reveal and hide new contact form
 document.getElementById('hide').style.display = "none"
+document.getElementById("add-contact").addEventListener("click", showForm)
+document.getElementById("back").addEventListener("click", showForm)
+
 let a = 1
 function showForm() {
     a += 1
@@ -13,9 +16,6 @@ function showForm() {
         document.getElementById('hide').style.display = "none";
     }
 }
-document.getElementById("add-contact").addEventListener("click", showForm)
-//document.getElementById("save-contact").addEventListener("click", showForm)
-document.getElementById("back").addEventListener("click", showForm)
 
 // Function to clear local storage of contact information
 document.getElementById("reset-contacts").addEventListener("click", memWipe)
@@ -29,17 +29,10 @@ function memWipe() {
 document.getElementById("delete-contact").addEventListener("click", () => {
     // Grab input value from delete button
     const getContactNum = document.querySelector('#contact-num')
-    console.log("HTML info in 'contact-num' input", getContactNum)
     let contactNum = getContactNum.value
-    console.log("contact number to be deleted", contactNum)
-    
-    const contacts = JSON.parse(localStorage.getItem('contacts'));
-    //console.log("contacts array", contacts)
-    //console.log("first entry in contacts array", contacts[0])
-    //console.log("length of contacts array", contacts.length)
-    //console.log("return id value of first entry in contacts", contacts[0].id)
 
     // Delete 1 contacts array item at index "index" and re-write to memory
+    const contacts = JSON.parse(localStorage.getItem('contacts'));
     let index = contactNum - 1
     contacts.splice(index, 1)
     console.log("contact array with [0] item removed", contacts)
