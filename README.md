@@ -3,7 +3,7 @@ Developed by,
 * Aubain, Max - [Github](https://github.com/CA-ma)  
 * Brás, Pedro - [Github](https://github.com/pedrocbras)
 
-Documentation by,
+Documented by,
 * Aubain, Max
 
 ## Summary
@@ -18,7 +18,7 @@ This repository contains scripts for a front-end implementation of an Address Bo
   * N/A
 
 **Testing**
-  * Cucumber-JS (Feature testing)
+  * Cucumber-JS: feature
 
 ## Deployment
 The [Address Book web app](https://ca-ma.github.io/address_book_challenge/) is deployed using Github Pages.
