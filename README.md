@@ -7,7 +7,7 @@ Documentation by,
 * Aubain, Max
 
 ## Summary
-This repository contains scripts for a front-end implementation of an Address Book application deployed on the web.  The UX/UI design uses stylizing features from the Semantic-UI component framework.  Application functionality, such as adding, saving, and removing contacts from the Address Book, is attained with Javascript.  The Address Book data is persistent accross browswer sessions with the utilization of the native JS method `window.localStorage`.  This application implements feature testing using Cucumber.
+This repository contains scripts for a front-end implementation of an Address Book application deployed on the web.  The UX/UI design uses stylizing features from the [Semantic-UI](https://semantic-ui.com/) component framework.  Application functionality, such as adding, saving, and removing contacts from the Address Book, is attained with Javascript.  The Address Book data is persistent accross browswer sessions with the utilization of the native JS method `window.localStorage`.  This application implements feature testing using [Cucumber](https://cucumber.io/).
 
 **Front end**
   * HTML
