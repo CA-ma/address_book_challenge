@@ -56,16 +56,21 @@ $ yarn add webpack webpack-cli babel-loader babel-preset-es2015 babel-polyfill b
 $ yarn run build
 ```
 
-The application can be inpsected using the user interface.  Selecting the "add/edit contacts" button will cause a web form to appear.  The input fields specify the information for a new contact to be added to the list.  At the bottom of the form are a collection of actions the user can take, including `add` contact, `remove` contact, `reset` the contacts list, and `hide` the menu.  With each action, the contacts list will update itself accordingly.
+The application can be inpsected in the view.  
 
 **Application view after contact is added**<br>
 ![contact added](/src/img/contact_added.png) 
 
-The application code is contained in the [`app.js`](/src/app.js) file.  It is lightly commented for reviewers to easily locate and identify key methods that enable the functionality of the app.  
+Selecting the `Add/Edit Contacts` button will cause a form to appear.  The input fields specify the information that will be added to a new contact.  At the bottom of the form are a collection of actions the user can take, including `Save Contact` with the current information in the form, `Delete` an already saved contact identified by contact number, `Reset Contacts` which clears `window.localStorage` of all contact information, and `Hide` the menu.  With each action, the contacts list will update itself accordingly in the memory and then render the updated contacts list.
+
+**Application view with contact form**<br>
+![contact added](/src/img/contact_form.png) 
+
+The source code is contained in [`app.js`](/src/app.js).  It contains brief comments that name key methods which enable the functionality of the app.  
 
 ---
 
-Feature testing can be accomplished using Cucumber, which enables Behavior Driven Design (BDD) processes with the rigor of Test Driven Development (TDD) in one's coding flow.  User stories were drafted to guide the development of scenarios in the feature testing process.  This 
+Feature testing is accomplished using Cucumber, which enables Behavior Driven Design (BDD) processes with the rigor of Test Driven Development (TDD) in one's coding flow.  User stories were drafted to guide the development of scenarios in the feature testing process.  Two scenarios, located in [`/features/main.feature`](/features/main.feature) were derived from the following user story.
 
 ```
 "As a user,
@@ -73,7 +78,7 @@ In order to stay in touch with my friends,
 I would like to be able to create a contact for them in my address book."
 ```
 
-The full feature test can be inspected in the [`/features/main.feature`](/features/main.feature) file.  It is straight forward to review as the Cucumber testing language, [Gherkin](https://cucumber.io/docs/gherkin/reference/), mimics natural language syntax and is straight forward to read.  The Javascript step definitions that translate the Cucumber test requirements to JS methods, and supporting JS methods for those step definitions, are contained in the [`/features/step_definitions/basic-steps.js`](/features/step_definitions/basic-steps.js) and [`/features/support/world.js`](/features/support/world.js) files.
+The scenarios of the feature test are straight forward to review as the Cucumber testing language, [Gherkin](https://cucumber.io/docs/gherkin/reference/), mimics natural language syntax and is easy to read.  The Javascript step definitions that translate the Cucumber test requirements to JS methods, and supporting JS methods for those step definitions, are contained in [`/features/step_definitions/basic-steps.js`](/features/step_definitions/basic-steps.js) and [`/features/support/world.js`](/features/support/world.js).
 
 
 
