@@ -61,7 +61,7 @@ $ yarn run build
 ```
 
 ### Testing
-Of course, the application can be tested manually using the user interface.  Selecting the "add/edit contacts" button will cause a web form to appear.  The input fields specify the information for a new contact to be added to the list.  At the bottom of the form are a collection of actions the user can take, including `add` contact, `remove` contact, `reset` the contacts list, and `hide` the menu.  With each action, the contacts list will update itself accordingly.
+The application can be tested manually using the user interface.  Selecting the "add/edit contacts" button will cause a web form to appear.  The input fields specify the information for a new contact to be added to the list.  At the bottom of the form are a collection of actions the user can take, including `add` contact, `remove` contact, `reset` the contacts list, and `hide` the menu.  With each action, the contacts list will update itself accordingly.
 
 Using the Cucumber package, feature testing can be accomplished.  Cucumber is a useful tool to enable Behavior Driven Design (BDD) elements with the rigor of Test Driven Development (TDD).  User stories were drafted to guide the feature testing process.
 
@@ -76,4 +76,4 @@ The full feature test can be inspected in the `/features/main.feature` file.  It
 Finally, the application code is contained in the `/src/app.js` file.  It is lightly commented for reviewers to easily locate and identify key methods that enable the functionality of the app.
 
 ## Acknowledgements
-Thank you to Craft Academy in Stockholm, Sweden for crafting this challenge.
+Thank you to [Craft Academy](https://craftacademy.se/) in Stockholm, Sweden for crafting this challenge.
