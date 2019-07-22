@@ -66,9 +66,7 @@ Selecting the `Add/Edit Contacts` button will cause a form to appear.  The input
 **Application view with contact form**<br>
 ![contact added](/src/img/contact_form.png) 
 
-The source code is contained in [`app.js`](/src/app.js).  It contains brief comments that name key methods which enable the functionality of the app.  Notably, 
-
----
+The source code is contained in [`app.js`](/src/app.js).  It contains comments that describe key methods which enable the app functionality.  Notably, the function that store information in `window.localStorage`, that `renderContacts()`, and that delete a selected contact from `window.localStorage` drive most of the app.
 
 Feature testing is accomplished using Cucumber, which enables Behavior Driven Design (BDD) processes with the rigor of Test Driven Development (TDD) in one's coding flow.  User stories were drafted to guide the development of scenarios in the feature testing process.  Two scenarios, located in [`/features/main.feature`](/features/main.feature) were derived from the following user story.
 
@@ -78,9 +76,7 @@ In order to stay in touch with my friends,
 I would like to be able to create a contact for them in my address book."
 ```
 
-The scenarios of the feature test are straight forward to review as the Cucumber testing language, [Gherkin](https://cucumber.io/docs/gherkin/reference/), mimics natural language syntax and is easy to read.  The Javascript step definitions that translate the Cucumber test requirements to JS methods, and supporting JS methods for those step definitions, are contained in [`/features/step_definitions/basic-steps.js`](/features/step_definitions/basic-steps.js) and [`/features/support/world.js`](/features/support/world.js).
-
-
+The scenarios of the feature test are straight forward to review as the Cucumber testing language, [Gherkin](https://cucumber.io/docs/gherkin/reference/), mimics natural language syntax and is easy to read.  The feature test confirms that first one contact can be saved, and then another for a total of two saved contacts.  The Javascript step definitions in [`/features/step_definitions/basic-steps.js`](/features/step_definitions/basic-steps.js) translate the Cucumber test requirements to JS methods. such as 'click on button' or 'fill in form field'.   The step definitions are further defined by JS methods contained in [`/features/support/world.js`](/features/support/world.js) that execute the intended test step.
 
 ## Acknowledgements
 Thank you to [Craft Academy](https://craftacademy.se/) in Stockholm, Sweden for crafting this challenge.
