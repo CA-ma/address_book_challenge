@@ -66,7 +66,7 @@ Selecting the `Add/Edit Contacts` button will cause a form to appear.  The input
 **Application view with contact form**<br>
 ![contact added](/src/img/contact_form.png) 
 
-The source code is contained in [`app.js`](/src/app.js).  It contains brief comments that name key methods which enable the functionality of the app.  
+The source code is contained in [`app.js`](/src/app.js).  It contains brief comments that name key methods which enable the functionality of the app.  Notably, 
 
 ---
 

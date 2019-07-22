@@ -63,16 +63,16 @@ const renderContacts = () => {
       index += 1
       let li = document.createElement('li')
       li.innerHTML = `
-                <div class="card">
-                    <div class="content">
-                        <p id="name">${index}.  ${contact.name}</p>
-                        <p id="phone"><i class="phone square icon"></i>${ contact.phone}</p>
-                        <p id="company"><i class="suitcase icon"></i>${ contact.company}</p>
-                        <p id="note"><i class="clipboard outline icon"></i>${ contact.notes}</p>
-                        <p id="email"><i class="envelope outline icon"></i>${ contact.email} | <i class="twitter square icon"></i>
-                        <a id="twitter" href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a></p>
-                    </div>
+              <div class="card">
+                <div class="content">
+                  <p id="name">${index}.  ${contact.name}</p>
+                  <p id="phone"><i class="phone square icon"></i>${ contact.phone}</p>
+                  <p id="company"><i class="suitcase icon"></i>${ contact.company}</p>
+                  <p id="note"><i class="clipboard outline icon"></i>${ contact.notes}</p>
+                  <p id="email"><i class="envelope outline icon"></i>${ contact.email} | <i class="twitter square icon"></i>
+                  <a id="twitter" href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a></p>
                 </div>
+              </div>
             `
       ol.appendChild(li)
     })
