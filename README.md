@@ -59,12 +59,12 @@ $ yarn run build
 The application can be inpsected in the view.  
 
 **Application view after contact is added**<br>
-![contact added](/src/img/contact_added.png) 
+<img src="./src/img/contact_added.png" width="650"> 
 
 Selecting the `Add/Edit Contacts` button will cause a form to appear.  The input fields specify the information that will be added to a new contact.  At the bottom of the form are a collection of actions the user can take, including `Save Contact` with the current information in the form, `Delete` an already saved contact identified by contact number, `Reset Contacts` which clears `window.localStorage` of all contact information, and `Hide` the menu.  With each action, the contacts list will update itself accordingly in the memory and then render the updated contacts list.
 
 **Application view with contact form**<br>
-![contact added](/src/img/contact_form.png) 
+<img src="./src/img/contact_form.png" width="650"> 
 
 The source code is contained in [`app.js`](/src/app.js).  It contains comments that describe key methods which enable the app functionality.  Notably, the function that store information in `window.localStorage`, that `renderContacts()`, and that delete a selected contact from `window.localStorage` drive most of the app.
 
