@@ -8,7 +8,8 @@ Documented by,
 
 ## Summary
 
-**Front end**: HTML; CSS, Semantic - US; and JS ES6/ES2015.<br>
+**Front end**: HTML; CSS, Semantic - UI; and JS ES6/ES2015.<br>
+**Display format**: Desktop only.<br>
 **Back end**: N/A.<br>
 **Testing**: Cucumber - feature test.
 
